@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #c0392b;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.image-section {
+  text-align: center;
+  /* margin-top: 2rem; */
+  /* Ensure the image takes up the full width of the container */
+  width: 100%;
+}
+
+.home-image {
+  width: 60%;
+  height: 70vh;
+  max-width: 100%;
+  object-fit: cover; /* Ensures the image covers the space without stretching */
+  border-radius: 8px; /* Optional: adds rounded corners to the image */
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #c0392b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  /* position: fixed; */
+  width: 100%;
+  bottom: 0;
+}

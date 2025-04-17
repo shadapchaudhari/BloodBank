@@ -1,0 +1,78 @@
+/* Reset some default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f6f8fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Heading style */
+h1 {
+    margin-bottom: 30px;
+    color: #d62828;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Form container */
+form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #d62828;
+    outline: none;
+    box-shadow: 0 0 5px rgba(214, 40, 40, 0.3);
+}
+
+/* Button styling */
+button {
+    margin-top: 25px;
+    padding: 12px;
+    width: 100%;
+    background-color: #d62828;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b71c1c;
+}

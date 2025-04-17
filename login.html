@@ -1,0 +1,76 @@
+<?php
+session_start();
+if (isset($_SESSION['email']) || isset($_COOKIE['user_email'])) {
+    header("Location: Home.html");
+    exit();
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Blood Bank</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #f06, #f9a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  background: rgba(255,255,255,0.95);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: center;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #e91e63;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #d81b60;
+}
+
+a {
+  color: #e91e63;
+  text-decoration: none;
+}
+
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Login</h2>
+    <form action="http://localhost/Blood/backend/login_user.php" method="post">
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <label><input type="checkbox" name="remember"> Remember Me</label><br><br>
+      <button type="submit">Login</button>
+      <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </form>
+  </div>
+</body>
+</body>
+</html>

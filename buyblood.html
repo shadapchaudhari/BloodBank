@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Blood</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .buy-form-container {
+      background-color: #ffffff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      max-width: 450px;
+      width: 100%;
+    }
+
+    .buy-form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #c0392b;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      background-color: #fdfdfd;
+    }
+
+    button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      background-color: #c0392b;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #a93226;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="buy-form-container">
+    <h2>🛒 Buy Blood</h2>
+    <form action="http://localhost/Blood/backend/buy_blood.php" method="POST">
+      <label>Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Blood Group:</label>
+      <select name="blood_group" required>
+          <option value="A+">A+</option>
+          <option value="B+">B+</option>
+          <option value="O+">O+</option>
+          <option value="AB+">AB+</option>
+          <option value="A-">A-</option>
+          <option value="B-">B-</option>
+          <option value="O-">O-</option>
+          <option value="AB-">AB-</option>
+      </select>
+
+      <label>Quantity (in units):</label>
+      <input type="number" name="quantity" required>
+
+      <label>Contact:</label>
+      <input type="text" name="contact" required>
+
+      <button type="submit">🛒 Buy Blood</button>
+    </form>
+  </div>
+
+</body>
+</html>
