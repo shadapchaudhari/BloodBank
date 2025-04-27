@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Buttons
     echo "<div style='margin-top: 30px; text-align: center;'>
-            <a href='http://127.0.0.1:5501/Home.html' style='padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;'>🏠 Return to Home</a>
+            <a href='../Home.php' style='padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;'>🏠 Return to Home</a>
             <a href='http://127.0.0.1:5501/request.html' style='padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 16px; margin-left: 15px;'>🛒 Buy More Blood</a>
           </div>";
 }

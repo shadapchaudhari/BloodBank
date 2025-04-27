@@ -11,7 +11,7 @@
     <h1>Welcome to LifeSaver Blood Bank</h1>
     <nav>
       <ul>
-        <li><a href="Home.html">Home</a></li>
+        <li><a href="Home.php">Home</a></li>
         <li><a href="donor.html">Become a Donor</a></li>
         <li><a href="request.html">Request Blood</a></li>
         <li><a href="bloodstock.html">Blood Stock</a></li>
